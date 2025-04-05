@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #F7F9FB;
+    color: #333;
+}
+
+header {
+    background: #005B8C;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00B0D3;
+}
+
+#hero {
+    background: linear-gradient(135deg, #00B0D3, #005B8C);
+    color: white;
+    padding: 120px 30px;
+    text-align: center;
+    transition: background 1s ease;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00B0D3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005B8C;
+}
+
+#about, #services, #contact {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #005B8C;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-content, .services-content, .contact-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #005B8C;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #777;
+}
+
+footer {
+    background-color: #005B8C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

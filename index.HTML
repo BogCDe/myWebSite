@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi! I'm Morya Bogdan</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            background: linear-gradient(135deg, #64b3f4, #6e7dff, #ffffff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;  /* Центрирование контейнера по вертикали */
+            min-height: 100vh;
+            padding: 20px;
+            overflow-y: auto;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        /* Навигация с эффектом стекла */
+        nav {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #007aff;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #005bb5;
+        }
+
+        /* Стиль для заголовка */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #007aff;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        /* Фото профиля */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        /* Секции для работ */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .project-card {
+            width: 250px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            margin: 20px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            margin: 0 20px 20px;
+            color: #777;
+        }
+
+        /* Кнопка */
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin-top: 30px;
+            background-color: #007aff;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #005bb5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Навигация -->
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Заголовок -->
+        <section class="header" id="about">
+            <img src="logok.png" alt="Morya Bogdan" class="profile-photo">
+            <h1>Hi! I'm Morya Bogdan</h1>
+            <h2>Native iOS App Developer & Cross-platform Specialist</h2>
+            <p>I bring your app ideas to life, from concept to release, with a 10-day guarantee for iOS and 5-day for Android. With experience in iGaming, Dating, Betting, and Business apps, I also create cross-platform apps using Unity.</p>
+            <p>Need resell-ready apps with source code at affordable prices? I’m the person you need. Let’s build your app with top quality!</p>
+            <a href="mailto:your-email@example.com" class="button">Let’s Collaborate</a>
+        </section>
+
+        <!-- Проекты -->
+        <section id="projects" class="projects">
+            <div class="project-card">
+                <h3>iGaming App</h3>
+                <p>This app integrates seamlessly with live gaming services. Complete with a real-time gaming engine and personalized experience for players.</p>
+            </div>
+            <div class="project-card">
+                <h3>Dating App</h3>
+                <p>With advanced matching algorithms and video chat functionality, this app takes online dating to the next level.</p>
+            </div>
+            <div class="project-card">
+                <h3>Business App</h3>
+                <p>This app helps businesses manage resources and track performance with a modern, user-friendly design.</p>
+            </div>
+            <div class="project-card">
+                <h3>Other App</h3>
+                <p>Other apps, WebView, Games, etc...</p>
+            </div>
+        </section>
+
+        <!-- Контакт -->
+        <section id="contact" class="header">
+            <h2>Get in Touch</h2>
+            <p>If you have a project in mind or need any consultation, feel free to contact me!</p>
+            <a href="mailto:your-email@example.com" class="button">Contact Me</a>
+        </section>
+    </div>
+</body>
+</html>
